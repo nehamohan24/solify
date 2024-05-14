@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style1.css">
+        <style>
+       html {
+    scroll-behavior: smooth;
+  }
+        </style>
+    </head>
+    <body>
+            <body onload="myloader()">
+                <div class="loading-wrapper">
+                    <center>
+        <img id="solifytext" src="solifytext.png" width="100" height="100">
+        <img id="logo" src="logo.png" width="50" height="50">
+                    </center>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+    let preloader = document.querySelector(".loading-wrapper");
+    function myloader() {
+        setTimeout(function() {
+                preloader.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }, 3000);
+    }
+    </script>
+    </body>
+</html>
