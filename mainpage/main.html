@@ -1,29 +1,54 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="style1.css">
-        <style>
-       html {
-    scroll-behavior: smooth;
-  }
-        </style>
-    </head>
-    <body>
-            <body onload="myloader()">
-                <div class="loading-wrapper">
-                    <center>
-        <img id="solifytext" src="solifytext.png" width="100" height="100">
-        <img id="logo" src="logo.png" width="50" height="50">
-                    </center>
-        </div>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script>
-    let preloader = document.querySelector(".loading-wrapper");
-    function myloader() {
-        setTimeout(function() {
-                preloader.style.display = 'none';
-                document.body.style.overflow = 'auto';
-            }, 3000);
-    }
+<head>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="style2.css">
+    <style>
+        .content {
+            display: none;
+        }
+        body{
+            background-color: #DBFFDB;
+        }
+    </style>
+</head>
+<body onload="myloader()">
+    <div class="loading-wrapper">
+        <center>
+            <img id="solifytext" src="solifytext.png" width="100" height="100">
+            <img id="logo" src="logo.png" width="50" height="50">
+        </center>
+    </div>
+
+    <div class="content">
+        <header>
+            <img src="officiallogo.png" id="officiallogo" width="65px" height="65px" align="left">
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Login/Sign Up</a></li>
+            </ul>
+        </header>
+        <section class="sec1">
+            <img id="backhill" src="backhill.png">
+            <img id="fronthill" src="fronthill.png">
+            <img id="rock" src="rock.png">
+            <img id="trees" src="trees.png">
+            <img id="sun" src="sun.png">
+        </section>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        function myloader() {
+            let delayMilliseconds = 3000;
+            setTimeout(function() {
+                $(".loading-wrapper").fadeOut("fast", function() {
+                    $(".content").fadeIn("fast");
+                    document.body.style.overflow = 'auto';
+                });
+            }, delayMilliseconds);
+        }
     </script>
-    </body>
+</body>
 </html>

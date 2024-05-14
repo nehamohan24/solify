@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: 'Poppins',sans-serif;
+}
+body{
+    background-color:#dbffdb;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+header{
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 80%;
+    padding: 20px 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul{
+display: flex;
+justify-content: center;
+align-items: center;
+margin-left: auto;
+margin-right: auto;
+}
+.officialogo{
+    pointer-events: none;
+    margin-right: auto;
+}
+header ul li{
+    list-style:none;
+    margin-left: 20px;
+}
+header ul li a{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #0D3F0A;
+    border-radius: 20px;
+}
+header ul li a:hover,.active{
+    background: #689965;
+    color: white;
+}
+.sec1 img{
+    position: absolute;
+    top: 0;
+    left:0;
+    width:100%;
+    pointer-events: none;
+}
