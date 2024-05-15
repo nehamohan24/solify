@@ -3,11 +3,17 @@
     margin:0;
     padding: 0;
     box-sizing: 'Poppins',sans-serif;
+    scroll-behavior: smooth;
 }
 body{
     background-color:#dbffdb;
     min-height: 100vh;
     overflow-x: hidden;
+}
+#text{
+    position: absolute;
+    font-size: 7em;
+    top: 280px;
 }
 header{
     position: absolute;
@@ -18,6 +24,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 100;
 }
 header ul{
 display: flex;
@@ -44,10 +51,42 @@ header ul li a:hover,.active{
     background: #689965;
     color: white;
 }
+.sec1{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 110vh;
+    pointer-events: none;
+    overflow: hidden;
+}
 .sec1 img{
     position: absolute;
     top: 0;
     left:0;
     width:100%;
     pointer-events: none;
+}
+.sec2{
+    position: relative;
+    padding: 100px;
+        background-color:#233906;
+}
+.sec2 h1{
+    font-size: 3em;
+    color: white;
+    margin-bottom: 10px;
+}
+.sec2 p{
+    font-size: 1em;
+    color: white;
+    font-weight: 300;
+}
+.sec1::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 5%;
+    background:linear-gradient(to top,#233906,transparent);
+    z-index: 1000;
 }
