@@ -2,7 +2,7 @@
 *{
     margin:0;
     padding: 0;
-    box-sizing: 'Poppins',sans-serif;
+    font-family: 'Poppins',sans-serif;
     scroll-behavior: smooth;
 }
 body{
@@ -14,6 +14,7 @@ body{
     position: absolute;
     font-size: 7em;
     top: 280px;
+    color: #111e02;
 }
 header{
     position: absolute;
@@ -48,7 +49,7 @@ header ul li a{
     border-radius: 20px;
 }
 header ul li a:hover,.active{
-    background: #689965;
+    background: #233906;
     color: white;
 }
 .sec1{
@@ -68,18 +69,76 @@ header ul li a:hover,.active{
 }
 .sec2{
     position: relative;
-    padding: 100px;
-        background-color:#233906;
+    padding: 10px;
+    background-color: #233906;
+    justify-content: center;
+    align-items: center;
+    color:white;
 }
-.sec2 h1{
-    font-size: 3em;
-    color: white;
-    margin-bottom: 10px;
+.sec3{
+    position: relative;
+    padding: 150px;
+    background-color: #233906;
+    justify-content: center;
+    align-items: center;
+    color:white;
 }
-.sec2 p{
-    font-size: 1em;
+.sec2 p,.info{
+    font-size: x-large;
     color: white;
     font-weight: 300;
+}
+.div1{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.maintitle{
+    padding: 10px;
+    font-size: 4em;
+    margin-bottom: 60px;
+    color:#ceedce;
+}
+.content1{
+    position: relative;
+    width: 1150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content1 .image{
+    position: relative;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+}
+.content1 .image img{
+    z-index: 111;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.content1 .textbox{
+    z-index: 222;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(20px);
+    padding: 65px;
+    max-width: 300px;
+    max-height: 300px;
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 10px;
+    transform:translate(-60px,55px) ;
+}
+.info{
+    width: 700px;
+    margin-left: 50px;
+    max-width: 550px;
+    max-height: 550px;
 }
 .sec1::before{
     content: '';
