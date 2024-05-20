@@ -1,25 +1,24 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
-*{
-    margin:0;
+* {
+    margin: 0;
     padding: 0;
-    font-family: 'Poppins',sans-serif;
+    font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
 }
-body{
-    background-color:#dbffdb;
+body {
+    background-color: #dbffdb;
     min-height: 100vh;
     overflow-x: hidden;
 }
-#text{
+#text {
     position: absolute;
     font-size: 7em;
     top: 280px;
     color: #111e02;
 }
-header{
+header {
     position: absolute;
     top: 0;
-    left:0;
+    left: 0;
     width: 80%;
     padding: 20px 80px;
     display: flex;
@@ -27,32 +26,33 @@ header{
     align-items: center;
     z-index: 100;
 }
-header ul{
-display: flex;
-justify-content: center;
-align-items: center;
-margin-left: auto;
-margin-right: auto;
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
 }
-.officialogo{
+.officialogo {
     pointer-events: none;
     margin-right: auto;
 }
-header ul li{
-    list-style:none;
+header ul li {
+    list-style: none;
     margin-left: 20px;
 }
-header ul li a{
+header ul li a {
     text-decoration: none;
     padding: 6px 15px;
     color: #0D3F0A;
     border-radius: 20px;
 }
-header ul li a:hover,.active{
+header ul li a:hover,
+.active {
     background: #233906;
     color: white;
 }
-.sec1{
+.sec1 {
     position: relative;
     display: flex;
     justify-content: center;
@@ -60,61 +60,62 @@ header ul li a:hover,.active{
     pointer-events: none;
     overflow: hidden;
 }
-.sec1 img{
+.sec1 img {
     position: absolute;
     top: 0;
-    left:0;
-    width:100%;
+    left: 0;
+    width: 100%;
     pointer-events: none;
 }
-.sec2{
+.sec2 {
     position: relative;
     padding: 10px;
     background-color: #233906;
     justify-content: center;
     align-items: center;
-    color:white;
+    color: white;
 }
-.sec3{
+.sec3 {
     position: relative;
     padding: 150px;
     background-color: #233906;
     justify-content: center;
     align-items: center;
-    color:white;
+    color: white;
 }
-.sec2 p,.info{
+.sec2 p,
+.info {
     font-size: x-large;
     color: white;
     font-weight: 300;
 }
-.div1{
+.div1 {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-.maintitle{
+.maintitle {
     padding: 10px;
     font-size: 4em;
     margin-bottom: 60px;
-    color:#ceedce;
+    color: #ceedce;
 }
-.content1{
+.content1 {
     position: relative;
     width: 1150px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.content1 .image{
+.content1 .image {
     position: relative;
     width: 800px;
     height: 400px;
     overflow: hidden;
 }
-.content1 .image img{
+.content1 .image img {
     z-index: 111;
     top: 0;
     left: 0;
@@ -123,29 +124,110 @@ header ul li a:hover,.active{
     object-fit: cover;
     border-radius: 10px;
 }
-.content1 .textbox{
+.content1 .textbox {
     z-index: 222;
-    background: rgba(255,255,255,0.1);
+    background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(20px);
     padding: 65px;
     max-width: 300px;
     max-height: 300px;
-    border: 1px solid rgba(255,255,255,0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 10px;
-    transform:translate(-60px,55px) ;
+    transform: translate(-60px, 55px);
 }
-.info{
+.info {
     width: 700px;
     margin-left: 50px;
     max-width: 550px;
     max-height: 550px;
 }
-.sec1::before{
+.sec1::before {
     content: '';
     position: absolute;
     bottom: 0;
     width: 100%;
     height: 5%;
-    background:linear-gradient(to top,#233906,transparent);
+    background: linear-gradient(to top, #233906, transparent);
     z-index: 1000;
+}
+.sec4 {
+    position: relative;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    background-image: url('servicesbg.png');
+    background-size: cover;
+}
+.container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.container .card {
+    position: relative;
+    width: 300px;
+    height: 447px;
+    background-color: #0D3F0A;
+    margin: 35px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+}
+.container .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+}
+.container .card .image {
+    position: relative;
+    width: 60%;
+    height: 40%;
+    overflow: hidden;
+    border-radius: 15px;
+}
+.container .card .image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+.container .card .content {
+    padding: 10px 15px;
+    color: whitesmoke;
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+.container .card .heading {
+    padding: 10px 15px;
+    color: #ceedce;
+    text-align: center;
+}
+.container .card:hover .content {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(-7px);
+}
+.explore-button {
+    padding: 10px 20px;
+    background-color: #93e780;
+    color: #111e02;
+    border: 1px solid #111e02;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+.card:hover .explore-button {
+    display: block;
 }
