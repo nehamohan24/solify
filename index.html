@@ -4,130 +4,183 @@
     <title>Solify</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico.png">
     <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style1.css">
     <link rel="stylesheet" href="style2.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="style4.css">
     <style>
         .content {
             display: none;
         }
-        body{
+        body {
             background-color: #DBFFDB;
         }
-        span{
+        span {
             color: #93e780;
             font-style: italic;
             font-weight: bold;
+        }
+        .loading-wrapper {
+            display: none; /* Start hidden */
         }
     </style>
 </head>
 <body onload="myloader()">
     <div class="container1">
-    <div class="loading-wrapper">
-        <center>
-            <img id="solifytext" src="solifytext.png" width="100" height="100">
-            <img id="logo" src="logo.png" width="50" height="50">
-        </center>
-    </div>
-    <div class="content">
-        <header>
-            <img src="officiallogo.png" id="officiallogo" width="65px" height="65px" align="left" href="#main">
-            <ul>
-                <li><a href="#home" class="active">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#">Login/Sign Up</a></li>
-            </ul>
-        </header>
-        <section class="sec1" id="main">
-            <img src="bird.png" id="bird">
-            <img id="sun" src="sun.png">
-            <img id="backhill" src="backhill.png">
-            <h2 id="text">SOLIFY</h2>
-            <img src="water.png" id="water">
-            <img id="fronthill" src="fronthill.png">
-            <img id="rock" src="rock.png">
-            <img id="trees" src="trees.png">
-        </section>
-        <section class="sec2" id="about">
-            <div class="div1">
-                <h2 class="maintitle">About Solify</h2>
-                <div class="content1">
-                    <div class="image">
-                        <img src="selflove.png" alt="">
-                    </div>
-                    <div class="textbox">
-                        <p>Introducing a cutting-edge web-based platform, our mission is to empower individuals in <span> cultivating inner peace</span> and managing stress effectively</p>
-                    </div>
+        <div class="loading-wrapper">
+            <center>
+                <img id="solifytext" src="solifytext.png" width="100" height="100">
+                <img id="logo" src="logo.png" width="50" height="50">
+            </center>
+        </div>
+        <div class="content">
+            <header>
+                <img src="officiallogo.png" id="officiallogo" width="65px" height="65px" align="left" href="#main">
+                <ul>
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#">Login/Sign Up</a></li>
+                </ul>
+            </header>
+            <section class="sec1" id="main">
+                <img src="bird.png" id="bird">
+                <img id="sun" src="sun.png">
+                <img id="backhill" src="backhill.png">
+                <h2 id="text">SOLIFY</h2>
+                <img src="water.png" id="water">
+                <img id="fronthill" src="fronthill.png">
+                <img id="rock" src="rock.png">
+                <img id="trees" src="trees.png">
+            </section>
+            <section class="sec2" id="about">
+                <div class="div1">
+                    <h2 class="maintitle">About Solify</h2>
+                    <div class="content1">
+                        <div class="image">
+                            <img src="selflove.png" alt="">
+                        </div>
+                        <div class="textbox">
+                            <p>Introducing a cutting-edge web-based platform, our mission is to empower individuals in <span> cultivating inner peace</span> and managing stress effectively</p>
+                        </div>
                     </div>
                 </div>
-        </section>        
-                <section class="sec3">
-                    <div class="fadeineffect">
-                        <div class="div2">
-                            <div class="content1">
-                                <div class="info" id="info">
-                                    <p>With thoughtful gratitude prompts and tailored resources, our platform is designed to support individuals in their journey towards emotional balance and resilience.<br>
-                                        <span>Transform Stress into Serenity: Your Personal Oasis Awaits.</span></p>
-                                </div>
-                                <div class="image" id="image2">
-                                    <img src="mentalhealth.png" alt="">
-                                </div>
+            </section>
+            <section class="sec3">
+                <div class="fadeineffect">
+                    <div class="div2">
+                        <div class="content1">
+                            <div class="info" id="info">
+                                <p>With thoughtful gratitude prompts and tailored resources, our platform is designed to support individuals in their journey towards emotional balance and resilience.<br>
+                                    <span>Transform Stress into Serenity: Your Personal Oasis Awaits.</span></p>
+                            </div>
+                            <div class="image" id="image2">
+                                <img src="mentalhealth.png" alt="">
                             </div>
                         </div>
                     </div>
-                </section>
-        <section id="services" class="sec4">
-            <div class="container">
-                <div class="card">
-                  <div class="image">
-                    <img src="qsr.png" alt="Quick Stress Relief">
-                  </div>
-                  <div class="heading">
-                    <h1>Quick Stress<br>Relief</h1>
                 </div>
-                  <div class="content">
-                    <p>Description about Quick Stress Relief service... Lorem ipsum dolor sit amet consectetur adipisicing e</p>
-                    <center><button class="explore-button" data-url="main.html">Explore</button></center>
+            </section>
+            <section id="services" class="sec4">
+                <div class="container">
+                    <div class="card">
+                        <div class="image">
+                            <img src="qsr.png" alt="Quick Stress Relief">
+                        </div>
+                        <div class="heading">
+                            <h1>Quick Stress<br>Relief</h1>
+                        </div>
+                        <div class="content">
+                            <p>Simple practices to empower individuals regain composure and focus, enhancing their ability to cope with stressors effectively in moments of tension.</p>
+                            <center><button class="explore-button" data-url="main.html">Explore</button></center>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="image">
+                            <img src="ss.png" alt="Soothing Soundscapes">
+                        </div>
+                        <div class="heading">
+                            <h1>Soothing<br>Soundscapes</h1>
+                        </div>
+                        <div class="content">
+                            <p>Dive into an immersive auditory environment composed of calming natural sounds designed to promote relaxation, reduce stress, and enhance well-being.</p>
+                            <center><button class="explore-button" data-url="ss.html">Explore</button></center>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="image">
+                            <img src="ptb.png" alt="Progress Tracking Badges">
+                        </div>
+                        <div class="heading">
+                            <h1>Progress Tracking Badges</h1>
+                        </div>
+                        <div class="content">
+                            <p>Earn badges as virtual rewards to acknowledge your progress and stay motivated in your relaxation and self-care journey. </p>
+                            <center><button class="explore-button" data-url="ptb.html">Explore</button></center>
+                        </div>
+                    </div>
                 </div>
-                </div>    
-            
-                <div class="card">
-                    
-                  <div class="image">
-                    <img src="ss.png" alt="Soothing Soundscapes">
-                  </div>
-                  <div class="heading">
-                    <h1>Soothing<br>Soundscapes</h1>
-                </div>
-                  <div class="content">
-                    <p>Description about Soothing Soundscapes service...</p>
-                    <center><button class="explore-button" data-url="ss.html">Explore</button></center>
-                  </div>
-                </div>    
-            
-                <div class="card">
-                  <div class="image">
-                    <img src="ptb.png" alt="Progress Tracking Badges">
-                  </div>
-                  <div class="heading">
-                    <h1>Progress Tracking Badges</h1>
-                </div>
-                  <div class="content">
-                    <p>Description about Progress Tracking Badges service...</p>
-                    <center><button class="explore-button" data-url="ptb.html">Explore</button></center>
-                  </div>
-                </div>    
-              </div>
-        </section>               
-        <script src="parallax.js"></script>
+                <a href="#main" class="top-button">
+                    <span class="arrow">&uarr;</span>
+                  </a>
+            </section>
+            <button id="installBtn">Install App</button>
+
+<script>
+  let deferredPrompt;
+  const installBtn = document.getElementById('installBtn');
+
+  window.addEventListener('beforeinstallprompt', (e) => {
+    // Prevent the mini-infobar from appearing on mobile
+    e.preventDefault();
+    // Stash the event so it can be triggered later.
+    deferredPrompt = e;
+    // Update UI notify the user they can install the PWA
+    installBtn.style.display = 'block';
+
+    installBtn.addEventListener('click', () => {
+      // Show the install prompt
+      deferredPrompt.prompt();
+      // Wait for the user to respond to the prompt
+      deferredPrompt.userChoice.then((choiceResult) => {
+        if (choiceResult.outcome === 'accepted') {
+          console.log('User accepted the install prompt');
+        } else {
+          console.log('User dismissed the install prompt');
+        }
+        deferredPrompt = null;
+      });
+    });
+  });
+
+  window.addEventListener('appinstalled', (evt) => {
+    console.log('a2hs installed');
+  });
+</script>
+<script>
+    document.querySelector('.top-button').addEventListener('click', function(event) {
+      event.preventDefault(); // Prevent default anchor behavior
+      const targetElement = document.querySelector(this.getAttribute('href'));
+      if (targetElement) {
+        targetElement.scrollIntoView({
+          behavior: 'smooth' // Smooth scroll behavior
+        });
+      }
+    });
+  </script>
+            <script src="parallax.js"></script>
+        </div>
     </div>
-    </div>
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
         function myloader() {
             let delayMilliseconds = 2000;
+            $(".loading-wrapper").fadeIn("fast");
             setTimeout(function() {
                 $(".loading-wrapper").fadeOut("fast", function() {
                     $(".content").fadeIn("fast");
@@ -135,14 +188,33 @@
                 });
             }, delayMilliseconds);
         }
+
+        document.querySelectorAll('.explore-button').forEach(button => {
+            button.addEventListener('click', (event) => {
+                event.preventDefault();
+                const url = button.getAttribute('data-url');
+                $(".content").fadeOut("fast", function() {
+                    $(".loading-wrapper").fadeIn("fast", function() {
+                        setTimeout(function() {
+                            window.location.href = url;
+                        }, 2000); // Adjust the delay as needed
+                    });
+                });
+            });
+        });
     </script>
     <script>
-        document.querySelectorAll('.explore-button').forEach(button => {
-    button.addEventListener('click', () => {
-        const url = button.getAttribute('data-url');
-        window.location.href = url;
-    });
-});
-    </script>
+        if ('serviceWorker' in navigator) {
+          window.addEventListener('load', () => {
+            navigator.serviceWorker.register('service-worker.js')
+              .then((registration) => {
+                console.log('ServiceWorker registration successful with scope: ', registration.scope);
+              }, (error) => {
+                console.log('ServiceWorker registration failed: ', error);
+              });
+          });
+        }
+      </script>
+      
 </body>
 </html>

@@ -1,11 +1,48 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style3.css" />
-    <title>Meditation App</title>
+    <title>Quick Stress Relief</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico.png">
+    <style>
+    .back-button {
+  background-color: rgb(126, 194, 126); /* Button background color */
+  color: white; /* Button text color */
+  padding: 20px 20px; /* Button padding */
+  border: none; /* Remove button border */
+  border-radius: 50px; /* Button border radius (half of button height for circle) */
+  cursor: pointer; /* Cursor style */
+  font-size: 16px; /* Button text size */
+  position: fixed; /* Position the button relative to the viewport */
+  left: 20px; /* Align the button to the left of the screen */
+  top: 30px; /* Vertically center the button */
+  transform: translateY(-50%); /* Adjust vertical alignment */
+}
+
+.arrow {
+  position: absolute; /* Position the arrow relative to the button */
+  left: 10px; /* Adjust the left position of the arrow */
+  top: 50%; /* Align the arrow vertically */
+  transform: translateY(-50%); /* Center the arrow vertically */
+  font-size: 20px; /* Arrow size */
+}
+
+
+    </style>
+    
+</head>
+<button class="back-button" onclick="goBack()">
+  <span class="arrow">&larr;</span> 
+</button>
+
+  <script>
+    // Function to navigate back
+    function goBack() {
+      window.history.back();
+    }
+  </script>
     <div class="input">
       <label>Select Breaths</label>
       <select class="breath-input">
